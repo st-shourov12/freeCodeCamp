@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+    <style>
+        #title{
+            color: green;
+            text-align: center
+        };
+        #survey-form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+        .center{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+    </style>
+  </head>
+
+  <body>
+    <div class="center">
+        <h1 id="title">
+            Survey Form
+        </h1>
+        <p id="description">
+            Add your information for survey
+        </p>
+
+        <form action="" id="survey-form">
+            <fieldset>
+
+                <label for="name" id="name-label">Name</label>
+                <input type="text" id="name" placeholder="Type your name" required>
+            </fieldset>
+            <fieldset>
+
+                <label for="email" id="email-label">Email</label>
+                <input type="email" id="email" placeholder="Type your email" required>
+            </fieldset>
+
+            <fieldset>
+
+                <label for="number" id="number-label">Number</label>
+                <input type="number" min="5" max="9" id="number" placeholder="Type your number">
+            </fieldset>
+            <fieldset>
+
+                <select name="select" id="dropdown">
+                    <option value="Student">Student</option>
+                    <option value="Worker">Worker</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+
+                <input type="radio" id="html" name="survey-form" value="HTML">
+                <label for="html">HTML</label>
+                <input type="radio" id="css" name="survey-form" value="CSS">
+                <label for="css">CSS</label>
+            </fieldset>
+            <fieldset>
+                <input type="checkbox" name="survey-form" id="react" value="react">
+                <label for="react">React</label>
+                <input type="checkbox" name="survey-form" id="angular" value="angular">
+                <label for="angular">Angular</label>
+                <input type="checkbox" name="survey-form" id="vue" value="vue">
+                <label for="vue">Vue</label>
+            </fieldset>
+            
+
+            <input type="submit" id="#submit" for="survey-form" value="Submit">
+
+        </form>
+
+    </div>
+    
+  </body>
+</html>
