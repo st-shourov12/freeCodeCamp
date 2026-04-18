@@ -78,8 +78,25 @@ tr[class="in-progress"] span[class="status"] {
 }
 
 span[class="status"],
-span[class="rate"] {
+span[class^="rate"] {
     width: 50px;
-    height: 20px;
+    height: 50px;
     padding: 5px;
+}
+
+span[class^="rate"] > span {
+    border: 1 px solid red;
+    border-radius: 20px;
+    margin: 2px;
+    height: 15px;
+    width: 15px;
+    background-color: aqua
+}
+
+span[class~="one"] > span:first-child {
+    background-image: linear-gradient(to right, red, yellow);
+}
+
+span[class~="two"] > span:first-child {
+    background-image: linear-gradient(to right, red, yellow);
 }
