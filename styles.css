@@ -85,7 +85,7 @@ span[class^="rate"] {
 }
 
 span[class^="rate"] > span {
-    border: 1 px solid red;
+    border: 1px solid red;
     border-radius: 20px;
     margin: 2px;
     height: 15px;
@@ -97,6 +97,12 @@ span[class~="one"] > span:first-child {
     background-image: linear-gradient(to right, red, yellow);
 }
 
-span[class~="two"] > span:first-child {
+span[class~="two"] > span:nth-child(1),
+span[class~="two"] > span:nth-child(2) {
+    background-image: linear-gradient(to right, red, yellow);
+}
+
+
+span[class~="three"] > span{
     background-image: linear-gradient(to right, red, yellow);
 }
