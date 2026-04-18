@@ -1,4 +1,4 @@
-#playing-cards{
+/* #playing-cards{
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -25,4 +25,4 @@
 
 .right{
   align-self: flex-end
-}
+} */
