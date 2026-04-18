@@ -26,3 +26,38 @@
 .right{
   align-self: flex-end
 } */
+
+
+/* task 2 */
+
+tr[class="read"]{
+    background-image: linear-gradient(
+  to left,
+ red, orange
+);
+}
+
+tr[class="to-read"]{
+    background-image: linear-gradient(
+  to left,
+ rgb(30, 255, 0), rgb(0, 255, 255)
+);
+}
+tr[class="in-progress"]{
+    background-image: linear-gradient(
+  to left,
+ rgb(119, 0, 255), rgb(204, 0, 255)
+);
+}
+
+span{ 
+    display: inline-block;
+}
+
+tr[class="to-read"] span[class="status"] {
+    border: 1px solid black;
+    background-image: linear-gradient(
+        to left,
+        rgb(255, 0, 85), rgb(255, 0, 212)
+        );
+}
