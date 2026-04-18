@@ -55,9 +55,31 @@ span{
 }
 
 tr[class="to-read"] span[class="status"] {
-    border: 1px solid black;
+    border: 1px solid rgb(0, 0, 0);
     background-image: linear-gradient(
         to left,
         rgb(255, 0, 85), rgb(255, 0, 212)
         );
+}
+
+tr[class="read"] span[class="status"] {
+    border: 1px solid rgb(255, 0, 0);
+    background-image: linear-gradient(
+        to left,
+        rgb(145, 255, 0), rgb(255, 0, 212)
+        );
+}
+tr[class="in-progress"] span[class="status"] {
+    border: 1px solid rgb(57, 245, 0);
+    background-image: linear-gradient(
+        to left,
+        rgb(25, 0, 255), rgb(255, 0, 76)
+        );
+}
+
+span[class="status"],
+span[class="rate"] {
+    width: 50px;
+    height: 20px;
+    padding: 5px;
 }
