@@ -3,17 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <title>Technical Documentation Page</title>
-    <link rel="stylesheet" href="styles.css">
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <style>
+        @media (max-width: 768px) {
+            #navbar {
+                width: 100%;
+                position: static;
+            }
+
+            #main-doc {
+                margin-left: 0;
+            }
+        }
+    </style>
   </head>
 
   <body>
     <main id="main-doc">
 
       <nav id="navbar">
-        <header>Navigation Bar</header>
-        <div class="link-group">
-            <a href="" class="navlink"></a>
-        </div>
+        <header>Navigation</header>
+        <!-- <div class="link-group"> -->
+            <a href="#first_section" class="nav-link">first Section</a>
+            <a href="#second_section" class="nav-link">second Section</a>
+            <a href="#third_section" class="nav-link">third Section</a>
+            <a href="#fourth_section" class="nav-link">fourth Section</a>
+            <a href="#fifth_section" class="nav-link">fifth Section</a>
+        <!-- </div> -->
       </nav>
 
         <section class="main-section" id="first_section">
