@@ -4,6 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
+    <style>
+        
+           #nav-bar {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                background: white;
+                display: flex;
+            } 
+
+        @media (max-width: 768px) {
+            #header-img {
+                width: 100%;
+                position: static;
+            }
+
+           
+        }
+        
+    </style>   
 </head>
 <body>
     <header id="header">
@@ -28,7 +49,7 @@
 
         </section>
         <section id="second_section">
-            <form action="" id="form">
+            <form action="https://www.freecodecamp.org/email-submit" id="form">
                 <fieldset>
                     <label for="email">email</label>
                     <input type="email" placeholder="Write your email" name="email" id="email">
